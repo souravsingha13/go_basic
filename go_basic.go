@@ -2,6 +2,14 @@ package main
 import ("fmt")
 
 
+func compare(x int, y int){
+	if (x>y){
+		fmt.Println("Fuck ",x ,"is greater than",y)
+	}else{
+		fmt.Println("Fuck ",x ,"is less than",y)
+	}
+}
+
 func main(){
 	name := "Sourav Singha"
 	fmt.Println(name)
@@ -11,4 +19,13 @@ func main(){
 	fmt.Println(arrIn)
 	length := len(arrIn)
 	fmt.Printf("Length of array is : %d\n",length)
+	new_arr := arr[1:3]
+	fmt.Println(new_arr)
+	fmt.Println("Length:", len(arrIn))
+	fmt.Println("Capacity:", cap(arrIn))
+	compare(5,4)
+
+	for i:=0; i < len(arrIn); i ++ {
+		fmt.Println(arrIn[i])
+	}
 }
